@@ -23,9 +23,9 @@ https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Spam_filtering
 | Points    | Check                                    |
 |----------------|------------------------------------------|
 | 100            | **Date Sent:** Verifies the email was not sent in the future. |
-| 100            | **DMARC:** Confirms this email authentication protocols return a “PASS” value. |
-| 100            | **DKIM:** Confirms this email authentication protocols return a “PASS” value. |
-| 100            | **Received SPF:** Confirms this email authentication protocols return a “PASS” value. |
+| 100            | **DMARC:** Confirms this email authentication protocol returns a “PASS” value. |
+| 100            | **DKIM:** Confirms this email authentication protocol returns a “PASS” value. |
+| 100            | **Received SPF:** Confirms this email authentication protocol returns a “PASS” value. |
 | 020            | **X Received Address:** Ensures the presence of an X-Received address. |
 | 020            | **Return Address:** Ensures the presence of a return address. |
 | 030            | **Sender Address and Return Address Match:** Confirms that the Sender Address and Return Address are matching. |
