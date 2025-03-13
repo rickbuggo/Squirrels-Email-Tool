@@ -55,22 +55,22 @@ The tool is designed to be used with the raw text of an email copied and pasted 
 Copy the raw email from any email client, ensuring the headers are included.
 
 Example:
-![Copy Raw Email](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421591842-8b57ee7c-56e0-4b13-a339-75dcd53ce3d8.png)
+![Copy Raw Email](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/images/421591842-8b57ee7c-56e0-4b13-a339-75dcd53ce3d8.png)
 
 ### Step 2. Paste the Raw Email and Run the Script
 Run the script, and paste the raw email when prompted.
 
 Example:
-![Run Script](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421112897-864a2db1-2808-4c93-83c9-bc4e918a1a9c.png)
+![Run Script](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/images/421112897-864a2db1-2808-4c93-83c9-bc4e918a1a9c.png)
 
 ### Step 3. Observe Output
 Press enter after pasting the raw email. The output should look something like this:
 
 Example of a benign email:
-![Output Benign Email](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421114467-0b776214-e101-46d4-9d55-88a00bcfa273.png)
+![Output Benign Email](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/images/421114467-0b776214-e101-46d4-9d55-88a00bcfa273.png)
 
 Example of a known malicious email:
-![Output Malicious Email](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421114522-eb9a1333-28b6-47f0-8177-38df86324d94.png)
+![Output Malicious Email](https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/images/421114522-eb9a1333-28b6-47f0-8177-38df86324d94.png)
 
 ## Contribution
 To contribute to this project, please fork the repository and create a pull request with your changes.
