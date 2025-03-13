@@ -70,7 +70,7 @@ See below images for an example of using the script.
 I am using gmail, but the raw version of the email can be copied from any email client as long as the headers are included in the raw email.
 
 Copy the below:
-<img width="1315" alt="image" src="https://github.com/user-attachments/assets/8b57ee7c-56e0-4b13-a339-75dcd53ce3d8" />
+<img width="1315" alt="image" src="https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421591842-8b57ee7c-56e0-4b13-a339-75dcd53ce3d8.png" />
 
 
 ### Step 2. Paste the raw email and run the script ###
