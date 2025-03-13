@@ -69,18 +69,18 @@ See below images for an example of using the script.
 ### Step 1. Copy the raw email ###
 I am using gmail, but the raw version of the email can be copied from any email client as long as the headers are included in the raw email.
 
-Copy the below:
+Copy the raw email:
 <img width="1315" alt="image" src="https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421591842-8b57ee7c-56e0-4b13-a339-75dcd53ce3d8.png" />
 
 
 ### Step 2. Paste the raw email and run the script ###
 Run the script, and paste the raw email when prompted:
-<img width="1172" alt="image" src="https://github.com/user-attachments/assets/864a2db1-2808-4c93-83c9-bc4e918a1a9c" />
+<img width="1172" alt="image" src="https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421112897-864a2db1-2808-4c93-83c9-bc4e918a1a9c.png" />
 
 ### Step 3. Observe output ###
 Press enter after pasting the raw email, the output should look something like this (this is an email from one gmail account to another):
-<img width="876" alt="image" src="https://github.com/user-attachments/assets/0b776214-e101-46d4-9d55-88a00bcfa273" />
+<img width="876" alt="image" src="https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421114467-0b776214-e101-46d4-9d55-88a00bcfa273.png" />
 
 
 Here is an example output of a known malicious email:
-<img width="941" alt="image" src="https://github.com/user-attachments/assets/eb9a1333-28b6-47f0-8177-38df86324d94" />
+<img width="941" alt="image" src="https://github.com/Thoimrn/Squirrels-Email-Tool/blob/main/421114522-eb9a1333-28b6-47f0-8177-38df86324d94.png" />
