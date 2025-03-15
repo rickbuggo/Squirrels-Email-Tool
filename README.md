@@ -4,7 +4,7 @@
 > This tool is in progress. I will be adding additional features in the future
 
 ## Overview
-Squirrels Email Tool is a script designed to help analysts assess the security risks of email messages. The script runs through a series of checks on the raw email, including a header analysis, domain analysis, IP analysis, URL analysis, and a spam word check. All of these are pass/fail checks.
+The script runs through a series of checks on the raw email, including a header analysis, domain analysis, IP analysis, URL analysis, and a spam word check. All of these are pass/fail checks. When a check is failed, points are added to the overall risk score. Not all failed checks are equal, point weight is determined by overall risk. After the analysis is completed the risk score is summed. A risk score greater than 100 is considered indicitive of a potentially suspicious/malicious/spam email.
 
 A word on Naive Bayes:                                                                       
 Naive Bayes for email spam checking uses Bayes Theorem to classify emails as spam or not based on the likelihood of certain words appearing in each category. It calculates the probability that an email belongs to the spam or non-spam class by analyzing the frequency of words in labeled training emails. By applying the "naive" assumption that words are independent, it predicts whether new emails are spam based on the words they contain and their probabilities from the training set.
