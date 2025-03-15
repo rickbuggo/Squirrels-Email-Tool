@@ -6,8 +6,8 @@
 ## Overview
 Squirrels Email Tool is a script designed to help analysts assess the security risks of email messages. The script runs through a series of checks on the raw email, including a header analysis, domain analysis, IP analysis, URL analysis, and a spam word check. All of these are pass/fail checks.
 
-A word on Naive Bayes:  
-Naive Bayes for email spam checking uses Bayes Theorem to classify emails as spam or not based on the likelihood of certain words appearing in each category. It calculates the probability that an email is spam based on the words present.
+A word on Naive Bayes:                                                                       
+Naive Bayes for email spam checking uses Bayes Theorem to classify emails as spam or not based on the likelihood of certain words appearing in each category. It calculates the probability that an email belongs to the spam or non-spam class by analyzing the frequency of words in labeled training emails. By applying the "naive" assumption that words are independent, it predicts whether new emails are spam based on the words they contain and their probabilities from the training set.
 
 More information on Naive Bayes for Email Spam:
 [Naive Bayes Spam Filtering](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Spam_filtering)
