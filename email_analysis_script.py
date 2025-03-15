@@ -136,7 +136,7 @@ def header_analysis(email_raw, decoded_string):
                 # check that email wasn't sent in the future
                 if date_sent_normalized > now:
                     print("Email Sent in the Future, FAIL")
-                    Risk_Score += 75
+                    Risk_Score += 100
                 else:
                     print("Email not sent in the Future, PASS")
             else:
