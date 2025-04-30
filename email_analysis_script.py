@@ -19,7 +19,7 @@ def input_email():
 
     # Print spider
     def print_ascii_art():
-        ascii_art = '''
+        ascii_art = r'''
                   ||  ||  
                   \\\()// 
                  //(__)\\\\

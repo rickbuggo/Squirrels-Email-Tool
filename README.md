@@ -51,6 +51,11 @@ The following checks are done in the email headers:
 ## Usage
 The tool is designed to be used with the raw text of an email copied and pasted into an IDE or console. It requires a VirusTotal API key for usage, which can be stored as a configuration file in JSON format.
 
+```
+$ pip install -r requirements.txt
+$ python3 email_analysis_script.py
+```
+
 ### Step 1. Copy the Raw Email
 Copy the raw email from any email client, ensuring the headers are included.
 
