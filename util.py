@@ -1,10 +1,11 @@
 def greet():
     print("Hello!")
 
+
 def print_ascii_art():
     ascii_art = r'''
-                ||  ||  
-                \\\()// 
+                ||  ||
+                \\\()//
                 //(__)\\\\
                 ||    ||
     '''
