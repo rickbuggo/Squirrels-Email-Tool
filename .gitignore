@@ -1,1 +1,3 @@
 config.json
+*.eml
+__pycache__

@@ -1,4 +1,6 @@
 import re, base64, requests, json, joblib, pytz, ipaddress
+import sys
+import util
 from datetime import datetime
 from email import policy
 from email.parser import BytesParser
@@ -15,43 +17,15 @@ with open('config.json', 'r') as f:
 api_key = config.get("VT_API_KEY")
 
 
-def input_email():
-
-    # Print spider
-    def print_ascii_art():
-        ascii_art = r'''
-                  ||  ||  
-                  \\\()// 
-                 //(__)\\\\
-                 ||    ||
-       '''
-        print(ascii_art)
-        print("_________WELCOME TO EMAIL ANALYZER__________")
-        print("\n" * 2)
-
-
-    print_ascii_art()
+def input_email(filename):
     #Prompt user for raw email input
-    print("Please paste the raw email content below: \n")
-
-    email_raw_multi_line = ""
-    while True:
-
-        # read each line of input
-        line = input()
-        #exit when user presses enter twice
-        if line.strip() == "" and email_raw_multi_line.endswith("\n\n"):
-            break
-        #build a multi-line string
-        email_raw_multi_line += line + "\n"
-
-    # Save the raw email content to a file, this is for the email body extraction
-    with open('raw_email_2.txt', 'w') as file:
-        file.write(email_raw_multi_line)
-
-    # return the raw email that the user pasted
-    email_raw = email_raw_multi_line
-    return email_raw
+    try:
+        with open(filename, 'r') as f:
+            email_raw = f.read()  # read the whole file as a single string
+        return email_raw
+    except FileNotFoundError:
+        print(f"File '{filename}' not found.")
+        return None
 
 
 def email_encoding(email_raw):
@@ -759,12 +733,12 @@ def parse_email_body(raw_email: bytes):
 
     return subject, sender, recipient, body
 
-def naive_bayes():
+def naive_bayes(filename):
 
     Risk_Score = 0
 
     # Read the raw email content from the saved file
-    with open('raw_email_2.txt', 'r') as file:
+    with open(filename, 'r') as file:
         email_raw_multi_line = file.read()
 
     # Convert the string into bytes using UTF-8 encoding
@@ -811,14 +785,18 @@ def naive_bayes():
         return (Risk_Score)
 
 
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: email_analysis_script.py <filename>.eml")
+        sys.exit(1)
 
-
-
-def Main():
+    filename = sys.argv[1]
 
     Risk_Score = 0
 
-    email_raw = input_email()
+    util.print_ascii_art()
+    
+    email_raw = input_email(filename)
 
     decoded_string = email_encoding(email_raw)
 
@@ -832,7 +810,7 @@ def Main():
 
     Risk_Score += (vt_api_url(email_raw, decoded_string))
 
-    Risk_Score += (naive_bayes())
+    Risk_Score += (naive_bayes(filename))
 
     # Print final risk score analysis
     print("\n" * 3)
@@ -845,4 +823,5 @@ def Main():
         print("A risk score >= 100 is considered a Failure, and is indicative of a potentially suspicious or malicious email")
     print("\n" * 3)
 
-Main()
+if __name__ == "__main__":
+    main()
